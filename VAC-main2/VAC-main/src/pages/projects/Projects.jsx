@@ -19,7 +19,6 @@ const Projects = () => {
         <div className="projects">
           <p>Anti-Xenophobia</p>
           <p>Campaign LGBTIQ</p>
-          <p>Academy Read And Write Project</p>
           <p>English Classes For Refugees</p>
           <p>DHA Monitoring</p>
         </div>
