@@ -1,0 +1,121 @@
+@media (min-width: 0) {
+  .home_header_main_container {
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home_header_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--accent-clr);
+  }
+
+  .home_header_side_content {
+    padding: 0 var(--rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home_header_side h1 {
+    text-align: center;
+    color: var(--light);
+    font-size: 8vw;
+  }
+
+  .home_header_side p {
+    color: var(--light);
+  }
+
+  .home_header_img_container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home_header_img_container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .home_header_img_container.home_header_img {
+    display: none;
+  }
+
+  .para_img_1 {
+    height: 20vh;
+    background: linear-gradient(var(--gradient)), url(./assets/home-para.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .home_link {
+    background: var(--accent-clr);
+    border: 2px solid var(--btn-accent);
+    color: var(--btn-accent);
+    padding: var(--half-rem) var(--rem);
+    text-decoration: none;
+    transition: 250ms ease-in-out;
+  }
+
+  .home_link:hover {
+    border: 2px solid var(--dark-accent);
+    color: var(--light);
+    background-color: var(--dark-accent);
+  }
+
+  .home_link:nth-child(1) {
+    margin-right: var(--rem);
+  }
+
+  .home_link.home_btn {
+    color: var(--accent-clr);
+    background-color: var(--btn-accent);
+  }
+
+  .home_link.home_btn:hover {
+    border: 2px solid var(--dark-accent);
+    color: var(--light);
+    background-color: var(--dark-accent);
+  }
+}
+
+@media (min-width: 768px) {
+  .para_img_1 {
+    background: linear-gradient(var(--gradient)),
+      url(../../assets/logo-color.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .home_header_main_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home_header_side h1 {
+    font-size: 4vw;
+  }
+
+  .home_header_img_container.home_header_img {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 2560px) {
+}

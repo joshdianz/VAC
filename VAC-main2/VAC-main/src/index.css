@@ -1,0 +1,76 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: var(--ff-primary);
+}
+
+:root {
+  --main-clr: #000000;
+  --light: #fffffff3;
+  --light-accent: #c9c0c0f3;
+  --dark-accent: rgb(82, 80, 80);
+  --accent-clr: #151a36;
+
+  --btn-accent: #d1cbcbf3;
+  --br-img: 1em;
+
+  --gradient: rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85);
+
+  --ff-primary: "Roboto Condensed", sans-serif;
+  --ff-secondary: "Roboto Condensed", sans-serif;
+
+  --half-rem: 0.5rem;
+  --rem: 1rem;
+  --header-vh: 50vh;
+
+  --transition-1: all 250ms ease-in-out;
+  --transition-2: all 450ms ease-in-out;
+}
+
+/* Scroll bar styling */
+::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0.2em 0 0.3em #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background: var(--main-clr);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--light-accent);
+  opacity: 0.7;
+}
+
+/* Template */
+@media (min-width: 0) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 2560px) {
+}

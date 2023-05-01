@@ -1,0 +1,133 @@
+/* Media queries */
+
+@media (min-width: 0) {
+  nav {
+    display: flex;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-clr);
+    padding: var(--half-rem) calc(var(--rem) * 2);
+    box-shadow: 0 -5px 5px 10px var(--main-clr);
+  }
+
+  .logo_container {
+    width: 15rem;
+  }
+
+  .logo_container img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .burger_icon {
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--light);
+    transition: var(--transition-1);
+    animation: rotate_back 250ms ease-in forwards;
+  }
+
+  .burger_icon:hover {
+    color: var(--light-accent);
+  }
+
+  .burger_icon_active {
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--btn-accent);
+    animation: rotate_it 250ms ease-in forwards;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  /* Nav Links */
+  .nav_links {
+    display: none;
+    gap: 2rem;
+  }
+
+  .nav_links .nav_item {
+    color: var(--light);
+    text-decoration: none;
+    transition: var(--transition-1);
+  }
+
+  .nav_links .nav_item:hover {
+    color: var(--btn-accent);
+  }
+
+  /* Burger nav bar */
+  .burger_links {
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+  }
+
+  .burger_item {
+    padding: 0.5rem 4rem;
+    color: var(--accent-clr);
+    text-decoration: none;
+    border-top: 1px solid var(--accent-clr);
+    border-bottom: 1px solid var(--accent-clr);
+    background-color: var(--btn-accent);
+    transition: var(--transition-1);
+  }
+
+  .burger_item:hover {
+    color: var(--btn-accent);
+    background-color: var(--accent-clr);
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .nav_links {
+    display: flex;
+  }
+
+  .burger_links,
+  .burger_icon,
+  .burger_icon_active {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+}
+
+@media (min-width: 2560px) {
+}
+
+@keyframes rotate_it {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate_back {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
