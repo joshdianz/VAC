@@ -8,7 +8,7 @@ const Our_team = () => {
   return (
     <>
       <div className="team_header">
-        <h1>Our Team</h1>
+        <h1>Our Board Members</h1>
         <p>Get to know your reliable VAC team members</p>
       </div>
       <div className="team_cards_content">
@@ -21,6 +21,11 @@ const Our_team = () => {
           src={Image_1}
           name="Ngozo Crispin Kassarombo"
           position="Director"
+        /> 
+        <Team_member
+          src={image_board}
+          name="Antony"
+          position="Board Member"
         />
       </div>
     </>
